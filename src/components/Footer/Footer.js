@@ -1,15 +1,9 @@
-export default function Footer() {
-  const footerStyles = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    gap: "20px",
-    margin: "auto auto 20px auto",
-    width: "18%",
-  };
+import React from "react";
+import * as styles from "../../styles";
 
-  return ( // Add the return statement here
-    <div style={footerStyles}>
+export default function Footer() {
+  return (
+    <div style={styles.footerStyles}>
       {/* GitHub */}
       <a
         href="https://github.com/HectorHJDH"

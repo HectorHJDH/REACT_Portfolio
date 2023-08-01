@@ -1,17 +1,104 @@
-import React from 'react';
+import React, { useState } from "react";
+import * as styles from "../../styles";
 
 export default function Portfolio() {
+  const [isHouseFinderHover, setIsHouseFinderHover] = useState(false);
+  const [isBetBudHover, setIsBetBudHover] = useState(false);
+
+  const handleHouseFinderMouseEnter = () => {
+    setIsHouseFinderHover(true);
+  };
+
+  const handleHouseFinderMouseLeave = () => {
+    setIsHouseFinderHover(false);
+  };
+
+  const handleBetBudMouseEnter = () => {
+    setIsBetBudHover(true);
+  };
+
+  const handleBetBudMouseLeave = () => {
+    setIsBetBudHover(false);
+  };
+
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+    <div style={styles.pageStyle}>
+      <h1 style={styles.titleStyle}>Portfolio</h1>
+      <div style={styles.boxesStyle}>
+        {/* House Finder - Project 1 */}
+        <a
+          href="https://jony0418.github.io/project-api/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            ...styles.boxStyle,
+            backgroundImage: "url('/Proyect_1.PNG')",
+          }}
+        >
+          <a
+            href="https://jony0418.github.io/project-api/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 style={styles.boxTitles}>House Finder</h2>
+          </a>
+          <a
+            href="https://github.com/jony0418/project-api"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              ...styles.boxIcon,
+              ...(isHouseFinderHover ? styles.boxIconHover : {}),
+            }}
+            onMouseEnter={handleHouseFinderMouseEnter}
+            onMouseLeave={handleHouseFinderMouseLeave}
+          >
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/sf-black-filled/64/github.png"
+              alt="github"
+            />
+          </a>
+        </a>
+
+        {/* BetBud - Project 2 */}
+        <a
+          href="https://jony0418.github.io/project-api/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            ...styles.boxStyle,
+            backgroundImage: "url('/Proyect_2.PNG')",
+          }}
+        >
+          <a
+            href="https://jony0418.github.io/project-api/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 style={styles.boxTitles}>Bet Bud</h2>
+          </a>
+          <a
+            href="https://github.com/nellyfabela/BetBud"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              ...styles.boxIcon,
+              ...(isBetBudHover ? styles.boxIconHover : {}),
+            }}
+            onMouseEnter={handleBetBudMouseEnter}
+            onMouseLeave={handleBetBudMouseLeave}
+          >
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/sf-black-filled/64/github.png"
+              alt="github"
+            />
+          </a>
+        </a>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import * as styles from "./pages/styles";
+import * as styles from "../../styles";
 
-function NavTabs({ currentPage, handlePageChange }) {
+function Header({ currentPage, handlePageChange }) {
   return (
     <ul style={styles.navBarStyle}>
       <li>
@@ -53,4 +53,4 @@ function NavTabs({ currentPage, handlePageChange }) {
   );
 }
 
-export default NavTabs;
+export default Header;
