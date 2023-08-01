@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Header from './Header/Header';
-import AboutMe from './pages/AboutMe';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+import AboutMe from './Navigation/AboutMe';
+import Portfolio from './Navigation/Portfolio';
+import Resume from './Navigation/Resume';
+import Contact from './Navigation/Contact';
 import Footer from './Footer/Footer';
 
 export default function PortfolioContainer() {

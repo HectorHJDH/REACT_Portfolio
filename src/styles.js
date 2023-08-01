@@ -32,8 +32,6 @@ export const pageStyle = {
   margin: "0 auto",
   display: "flex",
   flexDirection: "column",
-  alignItems: "center", // Center the title horizontally
-  justifyContent: "center", // Center the title vertically
 };
 
 export const titleStyle = {
@@ -42,15 +40,65 @@ export const titleStyle = {
   margin: "0 auto",
 };
 
+export const titleStyle2 = {
+  fontSize: "2.2rem",
+  color: "#fca311",
+  margin: "0 0 15px",
+};
+
+export const subtitleStyle = {
+  fontSize: "1.5rem",
+  color: "#000000",
+  alignItems: "left",
+  justifyContent: "left",
+};
+
 export const pictureStyle = {
   width: "280px",
   height: "280px",
   borderRadius: "50%",
-  margin: "20px 0",
+  margin: "20px auto",
 };
 
 export const contentStyle = {
   fontSize: "1.2rem",
+  margin: "10px auto",
+};
+
+export const inputStyles = {
+  fontSize: "1.2rem",
+  margin: "0 0 15px",
+  width: "50%",
+  padding: "2px 6px",
+  height: "40px",
+  border: "1px solid black",
+  borderRadius: "5px",
+};
+
+export const textareaStyles = {
+  fontSize: "1.2rem",
+  margin: "0 0 15px",
+  width: "50%",
+  padding: "2px 6px",
+  height: "220px",
+  borderRadius: "5px",
+  resize: "none", // Add this line to prevent textarea resizing
+};
+
+
+export const buttonStyle = {
+  fontSize: "1.2rem",
+  margin: "0 0 15px",
+  padding: "12px 0",
+  width: "10%",
+  border: "1px solid #FCA311",
+  borderRadius: "5px",
+  backgroundColor: "#FCA311",
+  fontWeight: "500",
+};
+
+export const buttonStyleHover = {
+  fontWeight: "700",
 };
 
 export const boxesStyle = {
@@ -61,7 +109,7 @@ export const boxesStyle = {
   width: "100%",
   gap: "20px",
   margin: "20px auto",
-  textDecoration: 'none'
+  textDecoration: "none",
 };
 
 export const boxEmptyStyle = {
@@ -74,7 +122,7 @@ export const boxEmptyStyle = {
   display: "flex",
   flexDirection: "row",
   backgroundColor: "#14213D",
-}
+};
 
 export const boxTitles = {
   color: "#F2F2F2",
@@ -87,7 +135,6 @@ export const boxTitles = {
   margin: "0.5rem",
   height: "4rem",
 };
-
 
 export const boxIcon = {
   width: "50px",
