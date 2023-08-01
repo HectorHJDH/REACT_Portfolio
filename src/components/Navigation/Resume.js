@@ -1,25 +1,46 @@
-import React from 'react';
+import React from "react";
 import * as styles from "../../styles";
 
 export default function Resume() {
   return (
-    <div>
-      <h1>Resume</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
+    <div style={styles.pageStyle}>
+      <h1 style={styles.titleStyle2}>Resume</h1>
+      <p style={styles.contentStyle2}>
+        Download my{" "}
+        <a href="/RESUME EXAMPLE.pdf" target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
       </p>
+      <div style={{ margin: "10px 0 20px 5px" }}>
+        <h2 style={styles.subtitleStyle}>Front-End Proficiencies</h2>
+        <ul style={styles.contentStyle2}>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>responsive design</li>
+          <li>React</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      <div style={{ margin: "10px 0 20px 5px" }}>
+        <h2 style={styles.subtitleStyle}>Back-End Proficiencies</h2>
+        <ul style={styles.contentStyle2}>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Heroku</li>
+          <li>command line</li>
+          <li>npm</li>
+          <li>RESTful APIs</li>
+          <li>GraphQL</li>
+          <li>MySQL</li>
+          <li>Sequelize</li>
+          <li>MongoDB</li>
+          <li>Mongoose</li>
+          <li>Express.js</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
     </div>
   );
 }

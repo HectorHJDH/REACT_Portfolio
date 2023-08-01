@@ -43,7 +43,7 @@ export const titleStyle = {
 export const titleStyle2 = {
   fontSize: "2.2rem",
   color: "#fca311",
-  margin: "0 0 15px",
+  margin: "0 0 5px",
 };
 
 export const subtitleStyle = {
@@ -63,6 +63,11 @@ export const pictureStyle = {
 export const contentStyle = {
   fontSize: "1.2rem",
   margin: "10px auto",
+};
+
+export const contentStyle2 = {
+  fontSize: "1.2rem",
+  margin: "0",
 };
 
 export const inputStyles = {
