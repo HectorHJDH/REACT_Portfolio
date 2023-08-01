@@ -1,74 +1,51 @@
 import React from "react";
+import * as styles from "./pages/styles";
 
 function NavTabs({ currentPage, handlePageChange }) {
-  const navBarStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    gap: "20px",
-    listStyle: "none",
-    padding: "2.3rem",
-    color: "#fca311",
-    backgroundColor: "#14213d",
-  };
-
-  const navItemsStyle = {
-    display: "flex",
-    alignItems: "center",
-    gap: "20px",
-  };
-
-  const liStyle = {
-    padding: "5px",
-    fontSize: '1.3rem',
-  };
-
-  const titleStyle = {
-    fontSize: '3rem',
-  }
-
   return (
-    <ul style={navBarStyle}>
+    <ul style={styles.navBarStyle}>
       <li>
-        <h1 style={titleStyle}>Hector JDH</h1>
+        <h1 style={styles.titleStyle}>Hector JDH</h1>
       </li>
-      <div style={navItemsStyle}>
-        <li style={liStyle}>
+      <div style={styles.navItemsStyle}>
+        <li style={styles.liStyle}>
           <a
-            href="#home"
-            onClick={() => handlePageChange("Home")}
-            className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+            href="#aboutMe"
+            onClick={() => handlePageChange("About Me")}
+            className={currentPage === "About Me" ? "activeLink" : "nav-link"}
+            style={currentPage === "About Me" ? styles.activeLinkStyle : null}
           >
-            Home
+            About Me
           </a>
         </li>
-        <li style={liStyle}>
+        <li style={styles.liStyle}>
           <a
-            href="#about"
-            onClick={() => handlePageChange("About")}
-            className={currentPage === "About" ? "nav-link active" : "nav-link"}
+            href="#portfolio"
+            onClick={() => handlePageChange("Portfolio")}
+            className={currentPage === "Portfolio" ? "activeLink" : "nav-link"}
+            style={currentPage === "Portfolio" ? styles.activeLinkStyle : null}
           >
-            About
+            Portfolio
           </a>
         </li>
-        <li style={liStyle}>
-          <a
-            href="#blog"
-            onClick={() => handlePageChange("Blog")}
-            className={currentPage === "Blog" ? "nav-link active" : "nav-link"}
-          >
-            Blog
-          </a>
-        </li>
-        <li style={liStyle}>
+        <li style={styles.liStyle}>
           <a
             href="#contact"
             onClick={() => handlePageChange("Contact")}
-            className={
-              currentPage === "Contact" ? "nav-link active" : "nav-link"
-            }
+            className={currentPage === "Contact" ? "activeLink" : "nav-link"}
+            style={currentPage === "Contact" ? styles.activeLinkStyle : null}
           >
             Contact
+          </a>
+        </li>
+        <li style={styles.liStyle}>
+          <a
+            href="#resume"
+            onClick={() => handlePageChange("Resume")}
+            className={currentPage === "Resume" ? "activeLink" : "nav-link"}
+            style={currentPage === "Resume" ? styles.activeLinkStyle : null}
+          >
+            Resume
           </a>
         </li>
       </div>
