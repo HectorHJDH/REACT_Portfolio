@@ -61,31 +61,33 @@ export const boxesStyle = {
   width: "100%",
   gap: "20px",
   margin: "20px auto",
+  textDecoration: 'none'
 };
 
-export const boxStyle = {
+export const boxEmptyStyle = {
   border: "10px solid #FCA311",
   minWidth: "45%",
   minHeight: "300px",
   backgroundSize: "cover", // Adjust the background image size
   backgroundPosition: "center", // Center the background image
   backgroundRepeat: "no-repeat", // Prevent the background image from repeating
-  cursor: "pointer",
   display: "flex",
   flexDirection: "row",
-};
+  backgroundColor: "#14213D",
+}
 
 export const boxTitles = {
   color: "#F2F2F2",
   fontSize: "1.5rem",
-  textDecoration: "none",
+  textDecoration: "none", // This line sets the text decoration to "none"
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
   padding: "0 10px",
-  margin: "1rem",
+  margin: "0.5rem",
   height: "4rem",
 };
+
 
 export const boxIcon = {
   width: "50px",
@@ -100,7 +102,7 @@ export const boxIcon = {
 };
 
 export const boxIconHover = {
-  backgroundColor: "rgba(255, 255, 255, 0.8)", // Change the background color on hover
+  backgroundColor: "rgba(255, 255, 255, 1)", // Change the background color on hover
 };
 
 export const footerStyles = {
