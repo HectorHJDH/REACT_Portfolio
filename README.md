@@ -5,5 +5,5 @@ This challenge 20 objective is to build / update my personal portfolio using the
 
 Deployed Application Url: 
 
-![Portfolio screenshot](./JATE%20ss.PNG)
+![Portfolio screenshot](./public/Portfolio-Screenshot.PNG)
 
