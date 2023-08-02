@@ -29,7 +29,10 @@ export default function Projects() {
         href="https://jony0418.github.io/project-api/"
         target="_blank"
         rel="noopener noreferrer"
-        style={{ backgroundImage: "url('/Proyect_1.PNG')" }}
+        style={{
+          backgroundImage:
+            "url('" + process.env.PUBLIC_URL + "/Proyect_1.PNG')",
+        }}
         className={"boxStyle"}
       >
         <a
@@ -64,7 +67,10 @@ export default function Projects() {
         href="https://protected-dusk-26900-3b74a0f4eef3.herokuapp.com/login"
         target="_blank"
         rel="noopener noreferrer"
-        style={{ backgroundImage: "url('/Proyect_2.PNG')" }}
+        style={{
+          backgroundImage:
+            "url('" + process.env.PUBLIC_URL + "/Proyect_2.PNG')",
+        }}
         className={"boxStyle"}
       >
         <a

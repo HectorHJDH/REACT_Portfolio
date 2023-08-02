@@ -165,3 +165,7 @@ export const footerStyles = {
   margin: "auto auto 20px auto",
   width: "18%",
 };
+
+export const houseFinderImg = {
+  backgroundImage: "url('/Proyect_1.PNG')"
+}
