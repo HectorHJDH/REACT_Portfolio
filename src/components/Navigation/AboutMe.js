@@ -5,7 +5,7 @@ export default function AboutMe() {
     <div style={styles.pageStyle}>
       <h1 style={styles.titleStyle}>About Me</h1>
       <img
-        src={require('../../Assets/Hector_cut.jpg')}
+        src={require("../../Assets/Hector_cut.jpg")}
         alt="Hector"
         style={styles.pictureStyle}
       />
