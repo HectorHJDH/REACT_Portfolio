@@ -2,11 +2,10 @@ import React from "react";
 import * as styles from "../../styles";
 
 export default function AboutMe() {
-  {/* Component Content */}
   return (
     <div style={styles.pageStyle}>
       <h1 style={styles.titleStyle}>About Me</h1>
-      <img src="/Hector_cut.jpg" alt="Hector" style={styles.pictureStyle} />
+      <img src="/public/Hector_cut.jpg" alt="Hector" style={styles.pictureStyle} />
       <p style={styles.contentStyle}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
