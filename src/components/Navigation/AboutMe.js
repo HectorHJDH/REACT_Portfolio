@@ -9,16 +9,11 @@ export default function AboutMe() {
         alt="Hector"
         style={styles.pictureStyle}
       />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit,
-      lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi ac dui
-      fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras non risus
-      mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet ac. Sed nec
-      nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum ligula
-      in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec
-      nec ornare elit. Donec blandit est sed risus feugiat porttitor. Vestibulum
-      molestie hendrerit massa non consequat. Vestibulum vitae lorem tortor. In
-      elementum ultricies tempus. Interdum et malesuada fames ac ante ipsum
-      primis in faucibus.
+      I'm an engineer fueled by curiosity for emerging technologies, especially
+      in web development. I'm captivated by the impact web pages can have on
+      users and businesses. I thrive as a proactive collaborator, driven by a
+      genuine desire to assist others. Additionally, I excel in quickly
+      establishing rapport and fostering connections.
     </div>
   );
 }

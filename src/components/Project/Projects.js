@@ -5,6 +5,7 @@ import "./project.css";
 export default function Projects() {
   const [isHouseFinderHover, setIsHouseFinderHover] = useState(false);
   const [isBetBudHover, setIsBetBudHover] = useState(false);
+  const [isCre8tiveHover, setIsCre8tiveHover] = useState(false);
 
   const handleHouseFinderMouseEnter = () => {
     setIsHouseFinderHover(true);
@@ -20,6 +21,14 @@ export default function Projects() {
 
   const handleBetBudMouseLeave = () => {
     setIsBetBudHover(false);
+  };
+
+  const handleCre8tiveMouseEnter = () => {
+    setIsCre8tiveHover(true);
+  };
+
+  const handleCre8tiveMouseLeave = () => {
+    setIsCre8tiveHover(true);
   };
 
   return (
@@ -100,14 +109,43 @@ export default function Projects() {
         </a>
       </a>
 
-      {/* ? - Project 3 */}
-      <div
-        href="#"
-        style={{ backgroundColor: "#14213D", cursor: "auto" }}
+      {/* Cre8tive - Project 3 */}
+      <a
+        href="https://salty-wave-79315-cd2465ff485d.herokuapp.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          backgroundImage:
+            "url('" + process.env.PUBLIC_URL + "/Proyect_3.PNG')",
+        }}
         className={"boxStyle"}
       >
-        <h2 style={styles.boxTitles}>Project 3 - Upcoming...</h2>
-      </div>
+        <a
+          href="https://salty-wave-79315-cd2465ff485d.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 style={styles.boxTitles}>Cre8tive</h2>
+        </a>
+        <a
+          href="https://github.com/jonathAnC0bosR/Cre8tive"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            ...styles.boxIcon,
+            ...(isCre8tiveHover ? styles.boxIconHover : {}),
+          }}
+          onMouseEnter={handleCre8tiveMouseEnter}
+          onMouseLeave={handleCre8tiveMouseLeave}
+        >
+          <img
+            width="64"
+            height="64"
+            src="https://img.icons8.com/sf-black-filled/64/github.png"
+            alt="github"
+          />
+        </a>
+      </a>
     </div>
   );
 }

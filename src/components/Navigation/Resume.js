@@ -7,7 +7,7 @@ export default function Resume() {
       <h1 style={styles.titleStyle2}>Resume</h1>
       <p style={styles.contentStyle2}>
         Download my{" "}
-        <a href="/RESUME EXAMPLE.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/Resume - Hector Dominguez.pdf" download>
           Resume
         </a>
       </p>

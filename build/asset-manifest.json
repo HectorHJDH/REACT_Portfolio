@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React_Portfolio/static/css/main.9b653818.css",
-    "main.js": "/React_Portfolio/static/js/main.d0081519.js",
+    "main.js": "/React_Portfolio/static/js/main.01fa8c82.js",
     "static/media/Hector_cut.jpg": "/React_Portfolio/static/media/Hector_cut.4b6e8b23e10290cbe37c.jpg",
     "index.html": "/React_Portfolio/index.html",
     "main.9b653818.css.map": "/React_Portfolio/static/css/main.9b653818.css.map",
-    "main.d0081519.js.map": "/React_Portfolio/static/js/main.d0081519.js.map"
+    "main.01fa8c82.js.map": "/React_Portfolio/static/js/main.01fa8c82.js.map"
   },
   "entrypoints": [
     "static/css/main.9b653818.css",
-    "static/js/main.d0081519.js"
+    "static/js/main.01fa8c82.js"
   ]
 }
